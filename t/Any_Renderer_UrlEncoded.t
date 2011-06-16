@@ -38,7 +38,7 @@ if($HaveDep) {
   # rendering a list into JS
   ASSERT ( "1=2" eq $renderer->render ( { 1 => 2 } ), "Render a query string" ), 
   
-  ASSERT ( "abc=%26!!!%3B" eq $renderer->render ( { "abc" => "&!!!;" } ), "Render a query string with quotables" ), 
+  ASSERT ( "abc=%26%21%21%21%3B" eq $renderer->render ( { "abc" => "&!!!;" } ), "Render a query string with quotables" ), 
 
   # use some Hash::Flatten options
   $renderer = new Any::Renderer::UrlEncoded ( "UrlEncoded", {FlattenOptions => {HashDelimiter => ":"}} );
