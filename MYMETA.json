@@ -40,5 +40,10 @@
       }
    },
    "release_status" : "testing",
-   "version" : "1.15_01"
+   "resources" : {
+      "repository" : {
+         "url" : "https://github.com/kmcgrath/perl5-Any-Renderer"
+      }
+   },
+   "version" : "1.015_01"
 }

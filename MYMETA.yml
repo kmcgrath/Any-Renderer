@@ -22,4 +22,6 @@ requires:
   File::Spec: 0
   Log::Trace: 0
   Test::Assertions: 0
-version: 1.15_01
+resources:
+  repository: https://github.com/kmcgrath/perl5-Any-Renderer
+version: 1.015_01

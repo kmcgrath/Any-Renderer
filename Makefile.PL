@@ -11,4 +11,9 @@ WriteMakefile(
                            },
               ABSTRACT_FROM => 'lib/Any/Renderer.pm',
               AUTHOR        => 'British Broadcasting Corporation',
-             );
+              META_MERGE => {
+                  resources => {
+                      repository => 'https://github.com/kmcgrath/perl5-Any-Renderer',
+                  },
+              },
+);

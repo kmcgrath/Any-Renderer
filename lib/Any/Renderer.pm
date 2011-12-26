@@ -9,7 +9,7 @@ use File::Find;
 use File::Spec;
 
 use vars qw($VERSION %Formats @LowPriProviders);
-$VERSION = '1.15_01';
+$VERSION = '1.015_01';
 
 #Modules that provide an extensible set of formats that could clash with A::R native providers
 @LowPriProviders = qw(Data::Serializer);
