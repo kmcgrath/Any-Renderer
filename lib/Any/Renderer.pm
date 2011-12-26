@@ -1,7 +1,6 @@
 # Purpose : Provide a common interface to a variety of rendering formats
 # Author  : Matt Wilson - Original version by John Alden
 # Created : March 2006
-# CVS     : $Header: /home/cvs/software/cvsroot/any_renderer/lib/Any/Renderer.pm,v 1.14 2006/09/04 12:15:52 johna Exp $
 
 package Any::Renderer;
 
@@ -10,7 +9,7 @@ use File::Find;
 use File::Spec;
 
 use vars qw($VERSION %Formats @LowPriProviders);
-$VERSION = sprintf"%d.%03d", q$Revision: 1.14 $ =~ /: (\d+)\.(\d+)/;
+$VERSION = '1.15_01';
 
 #Modules that provide an extensible set of formats that could clash with A::R native providers
 @LowPriProviders = qw(Data::Serializer);
