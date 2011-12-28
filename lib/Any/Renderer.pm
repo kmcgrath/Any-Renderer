@@ -9,7 +9,7 @@ use File::Find;
 use File::Spec;
 
 use vars qw($VERSION %Formats @LowPriProviders);
-$VERSION = '1.015_01';
+$VERSION = '1.015_02';
 
 #Modules that provide an extensible set of formats that could clash with A::R native providers
 @LowPriProviders = qw(Data::Serializer);
@@ -237,7 +237,20 @@ template than 1 will be returned, otherwise 0.
 Discover a list of all known rendering formats that the backend modules
 provide, e.g. ( 'HTML::Template', 'JavaScript' [, ...]).
 
+
+=item $list_ref = Any::Renderer::failed_backends()
+
+Retuns all backends that failed to load
+
+
+
+=item $message = Any::Renderer::failed_backend_message($backend)
+
+Return the error message for a backend
+
 =back
+
+
 
 =head1 GLOBAL VARIABLES
 
@@ -315,13 +328,11 @@ All the serializers supported by Data::Serializer are automatically available vi
 
 =back
 	
-=head1 VERSION
-
-$Revision: 1.14 $ on $Date: 2006/09/04 12:15:52 $ by $Author: johna $
-
 =head1 AUTHOR
 
-Matt Wilson (original version by John Alden) <cpan _at_ bbc _dot_ co _dot_ uk>
+Current: Kevin McGrath  
+
+Pre-v1.015 Matt Wilson (original version by John Alden) <cpan _at_ bbc _dot_ co _dot_ uk>
 
 =head1 COPYRIGHT
 

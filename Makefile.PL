@@ -10,10 +10,10 @@ WriteMakefile(
                               'File::Spec' => 0,
                            },
               ABSTRACT_FROM => 'lib/Any/Renderer.pm',
-              AUTHOR        => 'British Broadcasting Corporation',
+              AUTHOR        => 'Kevin McGrath',
               META_MERGE => {
                   resources => {
-                      repository => 'https://github.com/kmcgrath/perl5-Any-Renderer',
+                      repository => 'https://github.com/kmcgrath/Any-Renderer',
                   },
               },
 );

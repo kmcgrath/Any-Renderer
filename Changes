@@ -1,3 +1,6 @@
+Wed Dec 28 08:57:23 EST 2011
+    Pass tests for Pod Coverage
+
 Mon Dec 26 08:55:22 EST 2011
     failed_backends() returns a listref of 
         backends that did not load.

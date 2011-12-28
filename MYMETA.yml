@@ -1,13 +1,14 @@
 ---
-abstract: Common API for modules that convert data structures into strings
+abstract: 'Common API for modules that convert data structures into strings'
 author:
-  - British Broadcasting Corporation
+  - 'Kevin McGrath'
 build_requires:
   ExtUtils::MakeMaker: 0
 configure_requires:
   ExtUtils::MakeMaker: 0
+distribution_type: module
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+generated_by: 'ExtUtils::MakeMaker version 6.57_05'
 license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,5 +24,5 @@ requires:
   Log::Trace: 0
   Test::Assertions: 0
 resources:
-  repository: https://github.com/kmcgrath/perl5-Any-Renderer
-version: 1.015_01
+  repository: https://github.com/kmcgrath/Any-Renderer
+version: 1.015_02
